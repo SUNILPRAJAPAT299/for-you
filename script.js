@@ -77,10 +77,11 @@ const emotionalLines = [
   "it makes your soul feel like a warm hug on a cold night.",
   "So here's my promise to you —",
   "through every storm, every silence, every broken day...",
-  "I'll be right here. Always. 💛"
+  "I'll be right here. Always. Bhondu💛",
+  "you love  Bhondu  🖤🧿❤️"
 ];
 
-let lineIndex = 0;
+let lineIndex = 0; 
 let charIndex = 0;
 let currentDisplayedText = "";
 let typingTimer = null;
