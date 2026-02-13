@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Alert 🚨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🚨 Attention Bhondu 🚨</h1>
+  <p class="subtitle">This is NOT a love website.</p>
+
+  <button onclick="nextMessage()">Proceed at your own risk 😌</button>
+
+  <div id="messageBox"></div>
+</div>
+
+<!-- Emoji Animation -->
+<div class="emoji">💀</div>
+<div class="emoji">💅</div>
+<div class="emoji">😂</div>
+<div class="emoji">❤️‍🔥</div>
+<div class="emoji">😎</div>
+
+<!-- Valentine Popup -->
+<div id="valentinePopup" class="popup-overlay">
+  <div class="popup-content">
+    <div class="flowers-display">🌹🌷🌸💐🌺🌻🌹🌷🌸💐</div>
+    <h2>Happy Valentine's Day! 💖</h2>
+    <p class="popup-text">Will you be my Valentine? 🌹</p>
+    <button onclick="acceptProposal()">Yes, I Accept! 💕</button>
+  </div>
+</div>
+
+<!-- Prank Reveal Popup -->
+<div id="prankPopup" class="popup-overlay">
+  <div class="popup-content prank-content">
+    <div class="flowers-display">😂🤣💀😂🤣💀😂🤣💀😂</div>
+    <h2>GOTCHA! IT'S A PRANK! 😂💀</h2>
+    <p class="popup-text prank-line">You really clicked "Accept"?! Bro, this was a friendship website the WHOLE TIME! 💀😂</p>
+    <p class="popup-joke">Q: Why did the Valentine go to jail?<br>A: Because it stole someone's heart... but turns out it was just a prank! 🚔😂</p>
+    <p class="popup-footer">Don't worry, you're still my favorite Bhondu 😌💅</p>
+    <button onclick="closePrank()">I can't believe I fell for this 😭</button>
+  </div>
+</div>
+
+<!-- Emotional Message Popup -->
+<div id="emotionalPopup" class="popup-overlay">
+  <div class="popup-content emotional-content">
+    <div class="flowers-display">💖✨💫🤍💖✨💫🤍💖✨</div>
+    <h2 class="emotional-heading">But seriously... 💛</h2>
+    <div id="typingContainer" class="typing-container">
+      <p id="typingText" class="typing-text"></p>
+      <span id="typingCursor" class="typing-cursor">|</span>
+    </div>
+    <div id="emotionalFooter" class="emotional-footer" style="display: none;">
+      <p class="emotional-sign">— Always & Forever 💛</p>
+      <button onclick="restartWebsite()" class="restart-btn">Start Over 🔄</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
