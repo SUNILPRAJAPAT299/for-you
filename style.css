@@ -195,3 +195,59 @@ button:hover {
   h1 { font-size: 1.4rem; }
   .popup-content { padding: 22px 16px; }
 }
+
+/* ===== MOBILE RESPONSIVE FORCE FIX ===== */
+@media (max-width: 768px) {
+
+  body {
+    align-items: flex-start;
+    padding: 16px 8px;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  #messageBox {
+    font-size: 14px;
+  }
+
+  .popup-content {
+    width: 92%;
+    max-width: 92%;
+    padding: 22px 16px;
+  }
+
+  .flowers-display {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .typing-container {
+    max-height: 50vh;
+    font-size: 14px;
+  }
+
+  .emoji {
+    font-size: 24px;
+  }
+}
+
