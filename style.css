@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  background: linear-gradient(135deg, #1d87d8, #ec8593);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ button:hover {
 /* Emoji animation */
 .emoji {
   position: absolute;
-  font-size: 28px;
+  font-size: 40px;
   animation: float 6s infinite ease-in-out;
 }
 
