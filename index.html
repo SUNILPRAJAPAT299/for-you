@@ -7,31 +7,39 @@
 </head>
 <body>
 
-  <div class="container">
-    
-    <h1 class="title">🖤 My Forever Space</h1>
-    <p class="subtitle">A place where emotions stay.</p>
+  <main class="wrapper">
+    <section class="card">
 
-    <!-- Emotion Section -->
-    <section class="emotion-section">
-      <h2>Today's Emotion</h2>
-      <p id="emotionText">
-        Today I feel silent… not sad, not happy. Just existing.
-      </p>
+      <h1 class="title">🖤 My Forever Space</h1>
+      <p class="subtitle">A place where emotions stay forever.</p>
+
+      <div class="divider"></div>
+
+      <!-- Emotion -->
+      <section class="emotion-section">
+        <h2>Today’s Emotion</h2>
+        <p class="emotion-text">
+          Today I feel silent… not sad, not happy.  
+          Just existing.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Chat -->
+      <section class="chat-section">
+        <h2>Leave a Thought</h2>
+
+        <input type="text" id="nameInput" placeholder="Your name (optional)">
+        <textarea id="messageInput" placeholder="Write something you want to leave behind…"></textarea>
+
+        <button onclick="addMessage()">Send</button>
+
+        <div id="messagesContainer"></div>
+      </section>
+
     </section>
-
-    <!-- Message Section -->
-    <section class="chat-section">
-      <h2>Leave a Thought</h2>
-
-      <input type="text" id="nameInput" placeholder="Your name (optional)">
-      <textarea id="messageInput" placeholder="Write something from your heart..."></textarea>
-      <button onclick="addMessage()">Send</button>
-
-      <div id="messagesContainer"></div>
-    </section>
-
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
