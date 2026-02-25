@@ -1,79 +1,115 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #121212);
-  color: white;
-  display: flex;
-  justify-content: center;
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
-.container {
-  width: 90%;
-  max-width: 700px;
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5f8fd6, #e88aa3);
+}
+
+/* CENTER EVERYTHING */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
 }
 
+/* MAIN CARD */
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 50px 60px;
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.2);
+}
+
+/* HEADINGS */
 .title {
+  font-size: 3rem;
   text-align: center;
-  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   text-align: center;
-  color: #aaa;
-  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-.emotion-section {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 40px;
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 40px 0;
 }
 
+/* EMOTION */
+.emotion-section h2,
+.chat-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.emotion-text {
+  font-size: 1.2rem;
+  zoom: 1.05;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* INPUTS */
 .chat-section input,
 .chat-section textarea {
   width: 100%;
-  margin-bottom: 15px;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  background: #2a2a3d;
-  color: white;
+  padding: 16px 18px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  outline: none;
 }
 
 .chat-section textarea {
-  height: 100px;
-  resize: none;
+  min-height: 140px;
+  resize: vertical;
 }
 
+/* BUTTON */
 button {
   width: 100%;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 16px;
+  font-size: 1.1rem;
+  border-radius: 16px;
   border: none;
-  background: #ff4d6d;
+  background: linear-gradient(135deg, #ff5f7e, #ff3d68);
   color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-  background: #ff1e4d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 77, 109, 0.4);
 }
 
+/* MESSAGES */
 .message {
-  background: rgba(255,255,255,0.08);
-  padding: 15px;
-  border-radius: 12px;
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #f6f6f6;
 }
 
 .reply {
-  margin-top: 10px;
-  padding: 10px;
-  background: rgba(255,77,109,0.2);
-  border-left: 3px solid #ff4d6d;
-  border-radius: 8px;
+  margin-top: 12px;
+  padding: 12px;
+  border-left: 4px solid #ff5f7e;
+  background: #ffe8ee;
+  border-radius: 10px;
 }
