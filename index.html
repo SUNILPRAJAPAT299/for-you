@@ -2,45 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Forever Space</title>
+  <title>Valentine Alert 🚨</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="wrapper">
-    <section class="card">
+<div class="container">
+  <h1>🚨 Attention Bhondu 🚨</h1>
+  <p class="subtitle">This is NOT a love website.</p>
 
-      <h1 class="title">🖤 My Forever Space</h1>
-      <p class="subtitle">A place where emotions stay forever.</p>
+  <button onclick="nextMessage()">Proceed at your own risk 😌</button>
 
-      <div class="divider"></div>
+  <div id="messageBox"></div>
+</div>
 
-      <!-- Emotion -->
-      <section class="emotion-section">
-        <h2>Today’s Emotion</h2>
-        <p class="emotion-text">
-          Today I feel silent… not sad, not happy.  
-          Just existing.
-        </p>
-      </section>
+<!-- Emoji Animation -->
+<div class="emoji">💀</div>
+<div class="emoji">💅</div>
+<div class="emoji">😂</div>
+<div class="emoji">❤️‍🔥</div>
+<div class="emoji">😎</div>
 
-      <div class="divider"></div>
+<!-- Valentine Popup -->
+<div id="valentinePopup" class="popup-overlay">
+  <div class="popup-content">
+    <div class="flowers-display">🌹🌷🌸💐🌺🌻🌹🌷🌸💐</div>
+    <h2>Happy Valentine's Day! 💖</h2>
+    <p class="popup-text">Will you be my Valentine? 🌹</p>
+    <button onclick="acceptProposal()">Yes, I Accept! 💕</button>
+  </div>
+</div>
 
-      <!-- Chat -->
-      <section class="chat-section">
-        <h2>Leave a Thought</h2>
+<!-- Prank Reveal Popup -->
+<div id="prankPopup" class="popup-overlay">
+  <div class="popup-content prank-content">
+    <div class="flowers-display">😂🤣💀😂🤣💀😂🤣💀😂</div>
+    <h2>GOTCHA! IT'S A PRANK! 😂💀</h2>
+    <p class="popup-text prank-line">You really clicked "Accept"?! Bro, this was a friendship website the WHOLE TIME! 💀😂</p>
+    <p class="popup-joke">Q: Why did the Valentine go to jail?<br>A: Because it stole someone's heart... but turns out it was just a prank! 🚔😂</p>
+    <p class="popup-footer">Don't worry, you're still my favorite Bhondu 😌💅</p>
+    <button onclick="closePrank()">I can't believe I fell for this 😭</button>
+  </div>
+</div>
 
-        <input type="text" id="nameInput" placeholder="Your name (optional)">
-        <textarea id="messageInput" placeholder="Write something you want to leave behind…"></textarea>
+<!-- Emotional Message Popup -->
+<div id="emotionalPopup" class="popup-overlay">
+  <div class="popup-content emotional-content">
+    <div class="flowers-display">💖✨💫🤍💖✨💫🤍💖✨</div>
+    <h2 class="emotional-heading">But seriously... 💛</h2>
+    <div id="typingContainer" class="typing-container">
+      <p id="typingText" class="typing-text"></p>
+      <span id="typingCursor" class="typing-cursor">|</span>
+    </div>
+    <div id="emotionalFooter" class="emotional-footer" style="display: none;">
+      <p class="emotional-sign">— Always & Forever 💛</p>
+      <button onclick="restartWebsite()" class="restart-btn">Start Over 🔄</button>
+    </div>
+  </div>
+</div>
 
-        <button onclick="addMessage()">Send</button>
-
-        <div id="messagesContainer"></div>
-      </section>
-
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
